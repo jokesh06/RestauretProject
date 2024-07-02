@@ -1,0 +1,54 @@
+<p>xyenta1 works!</p>
+<!-- <table border="1">
+<tr>
+<td><p *ngFor="let x of countries">
+    {{x|json}}
+</p></td>
+</tr>
+</table> -->
+<body>
+<table class="table" cellSpacing="1" cellPadding="5" border="1" align="center">
+    <thead>
+    
+        <tr>
+       <th >capital</th>
+        <th >Region</th>
+        <th >Population</th>
+        <th >Area</th>
+        <th>Independent</th>
+        <th>LandLocked</th>
+        <th>Postalcode</th>
+       </tr>
+    </thead>
+   <tr>
+        <td><span *ngFor="let x of countries">
+            <p *ngFor="let b of x.capital|keyvalue">{{b.value}}</p>
+            </span></td>
+            <td><p *ngFor="let x2 of countries">
+                  {{x2.region}}
+            </p></td>       
+            <td><p *ngFor="let x3 of countries">
+                {{x3.population|json}}
+          </p></td>
+          <td><p *ngFor="let x3 of countries">
+            {{x3.area|json}}
+      </p></td>
+      <td><p *ngFor="let x3 of countries">
+        {{x3.independent|json}}
+  </p></td>
+  <td><p *ngFor="let x3 of countries">
+    {{x3.landlocked|json}}
+</p></td>
+<td><span *ngFor="let x3 of countries">
+    <span *ngFor="let x4 of x3.postalCode | keyvalue">
+        <p *ngIf="x4.key=='format'">{{x4.value}}</p>
+            </span>
+    
+</span></td>
+
+
+    </tr>
+            
+   
+ </table>
+</body>

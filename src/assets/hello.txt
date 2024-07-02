@@ -1,0 +1,11 @@
+   public arr:any=[{ 
+                     id:'1',
+                     name:'jokesh'
+                   },
+                   {  id:'2',
+                      name:'ankeshwarapu'
+ 
+                  }
+     ];
+      
+    
